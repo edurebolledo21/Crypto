@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Crypto</title>
+</head>
+
+<body>
+
+    <div id="containerAll">
+
+
+        <div id="imagen">
+            <img id="HW" src="img/undraw_stock_prices_re_js33.svg" alt="">
+        </div>
+
+        <!-- selectores -->
+
+        <form id="formulario">
+            <div id="container">
+
+                <div>
+                    <h2 id="indicadores">ELIGE TU MONEDA</h2>
+                    <select name="selec-coin" id="coin" class="select-container">
+                        <option selected disabled value="">Selecciona una moneda</option>
+                        <option value="USD">Dolar Estadounidense</option>
+                        <option value="EUR">Euro</option>
+                        <option value="ARS">Pesos Argentinos</option>
+                        <option value="VES">Bolivares</option>
+                    </select>
+                </div>
+                <div>
+                    <h2 id="indicadores">ELIGE TU CRIPTOMONEDA</h2>
+                    <select name="selec-cripto" id="cripto" class="select-container">
+                        <option selected disabled value="">Selecciona una criptomoneda</option>
+                        <option value="BTC">Bitcoin</option>
+                        <option value="ETH">Ethereum</option>
+                        <option value="AXS">AXS</option>
+                        <option value="BNB">Binance Coin</option>
+                    </select>
+                </div>
+                <div>
+                    <h2 id="indicadores">MONTO</h2>
+                    <input autocomplete="off" type="text" id="select_moneda" class="form-input" placeholder="Ingrese un monto a cotizar..." class="select-container">
+                </div>
+
+                <button id="boton" type="submit" class="select-container">COTIZAR</button>
+
+            <div id="precio">
+             </div>
+
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
