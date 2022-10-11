@@ -42,4 +42,4 @@ formulario.addEventListener('submit', async e => {
     
 }
 
-})
+}) 
