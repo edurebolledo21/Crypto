@@ -1,10 +1,16 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #1e293b;
-    color: white;
-    display: flex;
-    height: 95vh;
-    width: 100%;
+  gap: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1e293b;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin: 0;
 }
 
 #containerAll {
@@ -12,14 +18,21 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap:1.5rem;
+
 }
 
-#imagen {
+#formulario {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
-    
+   
+}
+
+#HW {
+    height: 60%;
 }
 
 #container {
@@ -29,10 +42,6 @@ body {
     gap: 1rem;
 }
 
-#HW {
-    width: 75%;
-    height: 50%;
-}
 
 .select-container {
     width: 61vh;
@@ -46,7 +55,7 @@ body {
 }
 
 #select_moneda{
-    width: 61vh;
+    width: 59.8vh;
     height: 37px;
     padding-left: 8px;
     border-radius: 0.5rem;
@@ -85,6 +94,7 @@ p{
 }
 
 .loader {
+   
     font-size: 10px;
     margin: 17px auto;
     text-indent: -9999em;
@@ -145,5 +155,44 @@ p{
     100% {
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
+    } 
+}
+
+@media ((min-width: 320px) and (max-width: 425px)){
+    #HW{
+      height: 34%;
     }
+    #precio{
+      font-size: 14px;
+    }
+    #containerAll{
+      flex-direction: column-reverse;
+      
+    }
+    #container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 1rem;
   }
+  .select-container{
+    width: 41vh;
+  }
+  #indicadores{
+    font-size: 18px;
+  }
+  #select_moneda{
+    width: 39.4vh;
+    font-size: 12px;
+  }
+}
+@media ((min-width: 768px) and (max-width: 1024px)){
+  #containerAll{
+    flex-direction: row;
+    margin: 1rem;
+  }
+  #HW{
+    height: 48%;
+  }
+}
